@@ -1,0 +1,38 @@
+#syntax: glob
+# General
+\.orig$
+\.bak$
+.*~$
+.*\.log$
+/tmp.*$
+
+# vim
+\.swp$
+
+# CMake
+/Testing/
+/CMakeFiles/
+CMakeCache.txt
+/src/test/Makefile
+/src/test/Testing/
+cmake_install.cmake$
+CTestTestfile.cmake$
+
+# Generated tests
+/src/.*test-suites.*/[1-9]-.*\.html$
+/src/.*test-suites.*/SignIn.*.html$
+/src/.*test-suites.*/SignOut.html$
+
+# Privilege specific
+/src/privilege-test-suites/0-.*\.html$
+/src/privilege-test-suites/.*\.normal\.html$
+/src/privilege-test-suites/.*\.prelogin\.html$
+/src/privilege-test-suites/.*\.sh$
+
+# Imported projects
+/samples/
+/apikey$
+
+# result
+/results/
+
