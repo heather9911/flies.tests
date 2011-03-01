@@ -1,0 +1,49 @@
+#syntax: glob
+# General
+\.bak$
+\.old$
+\.orig$
+.*~$
+.*\.log$
+/tmp.*$
+\.cache/
+pom\.xml$
+
+# vim
+\.swp$
+
+# CMake
+/Testing/
+CMakeFiles/
+CMakeCache.txt
+Makefile$
+/src/test/Testing/
+cmake_install.cmake$
+CTestTestfile.cmake$
+
+# Generated files
+selenium/src/initial_setup/ServerConfiguration.html$
+selenium/src/initial_setup/SignInAdmin.html$
+
+
+# Generated tests
+/src/.*test-suites.*/[1-9]-.*\.html$
+/src/.*test-suites.*/SignIn.*.html$
+/src/.*test-suites.*/SignOut.html$
+/src/.*test-suites.*/HomePage.html$
+
+# Privilege specific
+/src/privilege-test-suites/0-.*\.html$
+/src/privilege-test-suites/.*\.normal\.html$
+/src/privilege-test-suites/.*\.prelogin\.html$
+/src/privilege-test-suites/.*\.sh$
+
+# Imported projects
+samples/
+apikey.*
+
+
+# result
+results/
+pulled/
+tmpc00
