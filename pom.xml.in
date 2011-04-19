@@ -1,0 +1,39 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>null</groupId>
+  <artifactId>null</artifactId>
+  <version>0</version>
+  <properties>
+      <flies.srcDir>.</flies.srcDir>
+      <flies.srcDirPot>pot</flies.srcDirPot>
+      <flies.dstDir>.</flies.dstDir>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.zanata</groupId>
+        <artifactId>zanata-maven-plugin</artifactId>
+	<version>@MVN_CLIENT_VER@</version>
+	<configuration>
+	    <srcDir>${flies.srcDir}</srcDir>
+	    <srcDirPot>${flies.srcDirPot}</srcDirPot>
+	    <dstDir>${flies.dstDir}</dstDir>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>openl10n-public-repository-group</id>
+      <name>OpenL10n Public Repository Group</name>
+      <url>http://nexus.openl10n.net/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+</project>
